@@ -102,4 +102,12 @@ public class Usuario {
     public int hashCode() {
         return Objects.hashCode(id);
     }
+
+    public void reset(){
+        this.estado = true;
+    }
+
+    public void mudaEstado(){
+        this.estado =!this.estado;
+    }
 }
